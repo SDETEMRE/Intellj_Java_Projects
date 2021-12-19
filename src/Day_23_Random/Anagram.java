@@ -4,9 +4,9 @@ import java.util.Locale;
 
 public class Anagram {
     public static void main(String[] args) {
-
+        System.out.println("hello");
         System.out.println(isAnagram("study","dusty"));
-
+        System.out.println("hello");
 
     } public static boolean isAnagram(String str1, String str2) {
         str1 = str1.replace(" ", "").toLowerCase();

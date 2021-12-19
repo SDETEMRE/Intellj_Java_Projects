@@ -9,7 +9,7 @@ public class AmazonTest {
         searchForAnItem();
         verifyResultsAreDisplayed();
         System.out.println("Amazon Search Functional Test Completed - PASS - ");
-
+        System.out.println("hello");
         System.out.println("---------------------------------");
 
         System.out.println("--Starting Amazon Search Functional Test--");
