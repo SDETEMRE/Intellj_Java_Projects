@@ -6,9 +6,7 @@ public class Person {
     private int age;  // only visible to current class
     private char gender;
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
     public void setName(String name) {
         this.name = name;
@@ -18,9 +16,12 @@ public class Person {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public Person(String emre){
+        this.name=name;
     }
+  /*  public void setAge(int age) {
+        this.age = age;
+    }*/
 
     public char getGender() {
         return gender;

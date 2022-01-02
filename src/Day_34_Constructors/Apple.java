@@ -1,10 +1,25 @@
 package Day_34_Constructors;
 
-public class Apple {
+class Apple {
+    String color = "red";
+}
 
-    String color = "Red";
+class PassingObject {
 
-    public void mA(){
-        System.out.println(color);
+
+    public static void main(String[] args) {
+        Apple apple = new Apple();
+        System.out.println(apple.color);
+
+        changeApple(apple);
+        System.out.println(apple.color);
+    }
+
+    public static void changeApple(Apple apple) {
+        apple.color = "green";
     }
 }
+
+
+
+

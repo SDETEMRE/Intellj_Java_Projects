@@ -11,12 +11,13 @@ public class TipCalculator {
         double tipPerPerson=0;
 
         Scanner scan =new Scanner (System.in);
-        System.out.println("Split");
+        System.out.println("Split:");
         String split = scan.next();
 
 
         System.out.println("Number of people:");
         int numberOfPeople = scan.nextInt();
+
 
         System.out.println("Check amount:");
         double checkAmount = scan.nextDouble();
@@ -24,38 +25,43 @@ public class TipCalculator {
         System.out.println("Service Quality:");
         String serviceQuality = scan.next();
 
-        if(split=="yes"&& serviceQuality=="Poor"){
+        if(split.toLowerCase().equals("yes") && serviceQuality.toLowerCase().equals("poor")){
             totalToPay = checkAmount*1.05;
             totalTip = checkAmount*0.05;
-            totalPerPerson= (totalToPay/numberOfPeople)%numberOfPeople;
-            tipPerPerson= (totalTip/numberOfPeople)%numberOfPeople;
+            totalPerPerson= (totalToPay/numberOfPeople);
+            tipPerPerson= (totalTip/numberOfPeople);
 
-        }else if (split=="yes"&&serviceQuality=="Fair"){
+        }else if (split.toLowerCase().equals("yes") && serviceQuality.toLowerCase().equals("fair")){
             totalToPay = checkAmount*1.1;
             totalTip = checkAmount*0.10;
-            totalPerPerson= (totalToPay/numberOfPeople)%numberOfPeople;
-            tipPerPerson= (totalTip/numberOfPeople)%numberOfPeople;
+            totalPerPerson= (totalToPay/numberOfPeople);
+            tipPerPerson= (totalTip/numberOfPeople);
 
-        }else if (split=="yes"&&serviceQuality=="Good"){
+        }else if (split.toLowerCase().equals("yes")&& serviceQuality.toLowerCase().equals("good")){
             totalToPay = checkAmount*1.15;
             totalTip = checkAmount*0.15;
-            totalPerPerson= (totalToPay/numberOfPeople)%numberOfPeople;
-            tipPerPerson= (totalTip/numberOfPeople)%numberOfPeople;
+            totalPerPerson= (totalToPay/numberOfPeople);
+            tipPerPerson= (totalTip/numberOfPeople);
 
-        }else if (split=="yes"&&serviceQuality=="Great"){
+        }else if (split.toLowerCase().equals("yes")&& serviceQuality.toLowerCase().equals("great")){
             totalToPay = checkAmount*1.20;
             totalTip = checkAmount*0.20;
-            totalPerPerson= (totalToPay/numberOfPeople)%numberOfPeople;
-            tipPerPerson= (totalTip/numberOfPeople)%numberOfPeople;
+            totalPerPerson= (totalToPay/numberOfPeople);
+            tipPerPerson= (totalTip/numberOfPeople);
 
-        }else if (split=="yes"&&serviceQuality=="Excellent"){
+        }else if (split.toLowerCase().equals("yes")&& serviceQuality.toLowerCase().equals("excellent")){
             totalToPay = checkAmount*1.25;
             totalTip = checkAmount*0.25;
-            totalPerPerson= (totalToPay/numberOfPeople)%numberOfPeople;
-            tipPerPerson= (totalTip/numberOfPeople)%numberOfPeople;
+            totalPerPerson= (totalToPay/numberOfPeople);
+            tipPerPerson= (totalTip/numberOfPeople);
 
 
-        }System.out.println("Number of people entered:" + numberOfPeople);
+        }
+
+        System.out.print("Number of people entered: ");
+        for (int i=0; i<numberOfPeople; i++) {
+            System.out.println("&");
+        }
         System.out.println("Total to pay: " + totalToPay);
         System.out.println("Total tip: " + totalTip);
         System.out.println("Total per person: " + totalPerPerson);

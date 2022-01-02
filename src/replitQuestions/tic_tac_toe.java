@@ -9,32 +9,61 @@ public class tic_tac_toe {
         char[] game = new char[9];
         for (int i = 0; i < game.length; i++) {
             char[] games = new char[0];
-            games[i] = in.next().charAt(0);
+            game[i] = in.next().charAt(0);
         }
 
         System.out.println(won(game));
     }
 
 
-    public static String won(char[] x) {
+    public static String won(char[] x)
+    {
 
-        String X = "Player X won";
-        String O = "Player O won";
+        for (int a = 0; a < 8; a++)
+        {
+            String line = null;
 
-        if (x[0] == 'X' && x[1] == 'X' && x[2] == 'X') {
-            return X;
-        } else if (x[3] == 'X' && x[4] == 'X' && x[5] == 'X') {
-            return X;
-        } else if (x[6] == 'X' && x[7] == 'X' && x[8] == 'X') {
-            return X;
-        } else if (x[0] == 'O' && x[1] == 'O' && x[2] == 'O') {
-            return O;
-        } else if (x[3] == 'O' && x[4] == 'O' && x[5] == 'O') {
-            return O;
-        } else if (x[6] == 'O' && x[7] == 'O' && x[8] == 'O') {
-            return O;
+            switch (a)
+            {
+                case 0:
+                    line = "" + x[0] + x[1] + x[2];
+                    break;
+                case 1:
+                    line = "" + x[3] + x[4] + x[5];
+                    break;
+                case 2:
+                    line = "" + x[6] + x[7] + x[8];
+                    break;
+                case 3:
+                    line = "" + x[0] + x[3] + x[6];
+                    break;
+                case 4:
+                    line = "" + x[1] + x[4] + x[7];
+                    break;
+                case 5:
+                    line = "" + x[2] + x[5] + x[8];
+                    break;
+                case 6:
+                    line = "" + x[0] + x[4] + x[8];
+                    break;
+                case 7:
+                    line = "" + x[2] + x[4] + x[6];
+                    break;
+            }
+            //For X winner
+            if (line.equals("XXX"))
+            {
+                return "Player X won";
+            }
+            // For O winner
+            else if (line.equals("OOO"))
+            {
+                return "Player O won";
+            }
         }
-return X;
+
+        return "No player won";
+
     }
 
 

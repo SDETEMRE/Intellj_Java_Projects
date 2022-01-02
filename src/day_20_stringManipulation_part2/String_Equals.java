@@ -7,6 +7,8 @@ public class String_Equals {
         String s2 = "Welcome to Java";
         String s3 = "Welcome to C++";
 
+
+
         boolean b1 = s1.equals(s2);
         boolean b2 = s1.equals(s3);
 

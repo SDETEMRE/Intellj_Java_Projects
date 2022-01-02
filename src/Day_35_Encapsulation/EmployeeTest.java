@@ -17,7 +17,7 @@ public class EmployeeTest {
         e1.setPosition("VP");
         System.out.println(e1.getName() + "|" + e1.getIdNumber() + "|" + e1.getDepartment() + "|" + e1.getPosition());
 
-        System.out.println(e1.toString());
+        System.out.println(e1);
 
     }
 }
