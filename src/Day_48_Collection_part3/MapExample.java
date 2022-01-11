@@ -28,6 +28,21 @@ public class MapExample {
         System.out.println(items.get("Apple"));
         System.out.println(items.get("Milk"));
 
+        items.remove("Flowers");
+        System.out.println(items.toString());
+
+        System.out.println("Is Apple there? " + items.containsKey("Apple"));
+
+        items.replace("Eggs",3.5);
+        System.out.println("Price of Eggs: " + items.get("Eggs"));
+
+        items.put("Milk",2.6);
+        System.out.println("Price of Milk " + items.get("Milk"));
+
+        // increase price of cherries by $2 with dynamic way
+
+        items.replace("Cherries",items.get("Cherries")+2.0);
+        System.out.println("Price of Cherries " + items.get("Cherries"));
 
 
     }
