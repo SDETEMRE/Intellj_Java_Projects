@@ -1,6 +1,9 @@
 package Day_48_Collection_part3;
 
+import Day_46_Collection_Part1.Product;
+
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class LoopMap {
@@ -31,6 +34,16 @@ public class LoopMap {
         for (String key : dataMap.keySet()) {
             System.out.println(key + "|" + dataMap.get(key));
         }
+        //looping by using forEach method
+        dataMap.forEach((k,v)->System.out.println(k+ "|" +v));
+
+        Map<Integer, Product> studentMap = new HashMap<>();
+        Map<String,String[]> data = new HashMap<>();
+        Map<Integer, List<String>> data2 = new HashMap<>();
+        Map<Integer,List<String []>> data3 = new HashMap<>();
+        Map<String,Map<Integer,Integer>> data4 = new HashMap();
+        Map<String,Map<Integer,Product>> data5 = new HashMap<>();
+
 
     }
 }
