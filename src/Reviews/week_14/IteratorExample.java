@@ -59,10 +59,5 @@ public class IteratorExample {
             i++;
         }     // java.util.ConcurrentModificationException
 
-
-
-
-
-
     }
 }
