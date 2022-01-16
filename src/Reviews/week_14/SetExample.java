@@ -18,8 +18,10 @@ public class SetExample {
 
 // Treeset : does not accept null, sorts the list, no duplicates
         Set<Integer> setThree = new TreeSet<>();
-        setThree.addAll(Arrays.asList(100,1,2,8,99,100,null,null));
+      //  setThree.addAll(Arrays.asList(100,1,2,8,99,100,null,null));
         System.out.println(setThree);
+
+
 
     }
 }
