@@ -1,6 +1,6 @@
 package day_19_StringManipulation_part1;
 
-public class Task_78 {
+public class Task_78_CountLetter {
     public static void main(String[] args) {
 
         String word = "abcabqcabc";

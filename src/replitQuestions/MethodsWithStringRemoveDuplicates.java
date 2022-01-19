@@ -14,9 +14,19 @@ public class MethodsWithStringRemoveDuplicates {
 
         for (int i = 0; i < str.length(); i++) {
 
-        }
+
+            for (int j = 1; j < str.length(); j++) {
+
+//                if(Character.compare(str.charAt(i),str.charAt(j))==)){
+//
+//                    continue;
+//                }
+            }
 
 
-        return str;
+        }return unique;
+
+
+
     }
 }

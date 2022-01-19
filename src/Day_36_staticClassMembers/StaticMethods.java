@@ -2,7 +2,7 @@ package Day_36_staticClassMembers;
 
 import java.awt.print.Pageable;
 
-public class StsticMethods {
+public class StaticMethods {
 
     static String name = "Apple";
     int age = 10;

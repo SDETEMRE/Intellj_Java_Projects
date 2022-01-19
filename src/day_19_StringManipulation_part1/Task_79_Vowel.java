@@ -1,6 +1,6 @@
 package day_19_StringManipulation_part1;
 
-public class Tas_79_Vowel {
+public class Task_79_Vowel {
 
     public static void main(String[] args) {
 

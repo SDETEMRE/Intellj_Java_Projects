@@ -6,7 +6,7 @@ public class Task_77_Emoji {
 
     public static void main(String[] args) {
 
-        String emoji = ";0";
+        String emoji = ":)";
 
         //check if it does not equal to 2 chars
 

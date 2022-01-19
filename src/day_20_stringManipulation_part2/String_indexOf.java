@@ -10,7 +10,7 @@ public class String_indexOf {
 
         System.out.println(word1.indexOf("java"));
 
-
+        System.out.println("=================================");
         String url = "www.okta.com";
         int i = url.indexOf(".");
         System.out.println("Pos of . " + i);
