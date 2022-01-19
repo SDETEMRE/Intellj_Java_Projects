@@ -2,6 +2,14 @@ package Lab_3;
 
 public class Question_7 {
     public static void main(String[] args) {
+        /*
+        Given 2 strings, a and b, return a string of the form short+long+short,
+with the shorter string on the outside and the longer string on the
+inside.
+comboString("Hello", "hi") → "hiHellohi"
+comboString("hi", "Hello") → "hiHellohi"
+comboString("aaa", "b") → "baaab"
+         */
 
         System.out.println(comboString("Hello","hi"));
         System.out.println(comboString("hi","Hello"));

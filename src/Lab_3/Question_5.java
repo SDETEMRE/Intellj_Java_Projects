@@ -2,6 +2,17 @@ package Lab_3;
 
 public class Question_5 {
     public static void main(String[] args) {
+        /*
+        Given a string of even length, return the first half. So the string
+"WooHoo" yields "Woo".
+firstHalf("WooHoo") → "Woo"
+firstHalf("HelloThere") → "Hello"
+firstHalf("abcdef") → "abc"Given a string of even length, return the first half. So the string
+"WooHoo" yields "Woo".
+firstHalf("WooHoo") → "Woo"
+firstHalf("HelloThere") → "Hello"
+firstHalf("abcdef") → "abc"
+         */
 
         System.out.println(firstHalf("WooHoo"));
         System.out.println(firstHalf("HelloThere"));

@@ -1,6 +1,11 @@
 package Lab_3;
 
-public class Question_17 {
+public class Question_17_Palindrom {
+    /*
+    Write a method that accepts a string
+and returns true if the string is
+palindrome.
+     */
 
     public static void main(String[] args) {
 
