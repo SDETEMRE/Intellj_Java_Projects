@@ -1,6 +1,6 @@
 package Day_27_Arays_Part4;
 
-public class legth {
+public class length {
     public static void main(String[] args) {
 
         int [][] numbers = {{1,2,3,4},{5,6},{9,10,11,23,30,50,60}};

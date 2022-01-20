@@ -26,7 +26,7 @@ public class PassArray {
     }public static void showArray(int[] array) {
 
         for(int value : array){
-            System.out.println(value);
+            System.out.print(value);
 
         }
 

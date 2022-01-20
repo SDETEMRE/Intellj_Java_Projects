@@ -38,6 +38,5 @@ public class Task_88_Cars {
 
 
 
-
     }
 }
